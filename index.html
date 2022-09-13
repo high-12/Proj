@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Eight Ball</title>
+    <script src="App.js">MagicEightBall</script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <div>
+          
+            <div className="question-container">
+              <input
+                type="text"
+                value={this.state.userInput}
+                onChange;={this.handleChange}
+                />
+              <button onClick;={this.ask}>
+                Ask the Magic Eight Ball!
+              </button>
+            </div>
+            
+            <div className="ball-container">
+              <div className="ball-black-outer">
+                <div className="ball-white-inner">
+                  <div>
+                    { (answer) ?
+                      answer
+                     :
+                      <div className='eight'>8</div>
+                    }
+                  </div>
+                </div>
+              </div>
+              <div className="ball-shadow"></div>
+            </div>
+            
+          </div>
+        );
+      }
+    };      
+        
+    
+</body>
+</html>
